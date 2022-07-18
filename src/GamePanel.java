@@ -7,13 +7,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.util.Random;
-import javax.swing.Timer;
 
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
 public class GamePanel extends JPanel implements ActionListener {
+	private static final long serialVersionUID = 1L;
 	
 	static final int width = 600;
 	static final int height = 600;
@@ -117,7 +117,7 @@ public class GamePanel extends JPanel implements ActionListener {
 	}
 	public void checkCollisions() {
 		//corpo
-		for(int i = body; i> 0; i--) {
+		for(int i = body; i > 0; i--) {
 			if((x[0] == x[i])&& (y[0] == y[i])) {
 			running = false;
 			}
